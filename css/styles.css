@@ -1,0 +1,166 @@
+/* styles.css */
+
+/* 通用样式 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+}
+
+a {
+    text-decoration: none;
+    color: #0071e3;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #0071e3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+/* 导航栏样式 */
+.main-header {
+    background-color: #000;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin: 0 20px;
+}
+
+.nav-list a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-list a:hover {
+    color: #a3a3a3;
+}
+
+/* Hero 区域 */
+.hero-section {
+    background: url('../img/1.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(12, 12, 12);
+}
+
+
+.hero-section h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero-section p {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.button {
+    display: inline-block;
+    background-color: #0071e3;
+    padding: 12px 30px;
+    color: white;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.button:hover {
+    background-color: #005bb5;
+}
+
+/* 产品展示区 */
+.product-showcase {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    background-color: #fff;
+    margin-top: -40px; /* 防止导航栏遮挡 */
+}
+
+.product {
+    text-align: center; /* 文本居中对齐 */
+    max-width: 500px; /* 最大宽度设置为300像素 */
+    background: #fff; /* 产品背景色为白色 */
+    border-radius: 8px; /* 圆角 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+    margin: 20px; /* 外边距，创建产品间的空间 */
+    padding: 15px; /* 内边距，增加内容与边框之间的距离 */
+}
+
+.product img {
+    width: 100%; /* 图片宽度占满父元素 */
+    height: auto; /* 保持纵横比 */
+    border-top-left-radius: 8px; /* 圆角 */
+    border-top-right-radius: 8px; /* 圆角 */
+}
+
+.button {
+    display: inline-block; /* 将按钮设为行内块元素 */
+    padding: 10px 20px; /* 内边距 */
+    background-color: #007bff; /* 按钮背景色 */
+    color: #fff; /* 按钮文字颜色 */
+    text-decoration: none; /* 去掉下划线 */
+    border-radius: 5px; /* 圆角 */
+    margin-top: 15px; /* 上外边距 */
+    transition: background-color 0.3s; /* 背景色过渡效果 */
+}
+
+.button:hover {
+    background-color: #0056b3; /* 悬停时更改背景色 */
+}
+
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product h2 {
+    font-size: 22px;
+    margin: 20px 0 10px;
+}
+
+.product p {
+    font-size: 16px;
+    color: #6e6e73;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f5f5f7;
+    font-size: 14px;
+    color: #86868b;
+}
